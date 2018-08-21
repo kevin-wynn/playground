@@ -1,0 +1,20 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "pm2": "pm2 start index.js --watch --name playground",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.5",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.18.3"
+  }
+}
