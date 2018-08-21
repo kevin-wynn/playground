@@ -177,12 +177,12 @@ router.post('/', function(req, res, next) {
                   'color': '#6C7A89'
                 },                      
                 {
-                  'fallback': 'Refer to the docs for more information at https://confluence.homeadvisor.com/display/~kwynn/Playground+Slack+Documentation',
+                  'fallback': 'Refer to the docs for more information at https://github.com/kevin-wynn/playground',
                   'actions': [
                     {
                       'type': 'button',
                       'text': 'Playground Docs',
-                      'url': 'https://confluence.homeadvisor.com/display/~kwynn/Playground+Slack+Documentation'
+                      'url': 'https://github.com/kevin-wynn/playground'
                     }
                   ]
                 }
@@ -296,12 +296,12 @@ router.post('/', function(req, res, next) {
                   'color': '#663399'
                 },              
                 {
-                  'fallback': 'Refer to the docs for more information at https://confluence.homeadvisor.com/display/~kwynn/Playground+Slack+Documentation',
+                  'fallback': 'Refer to the docs for more information at https://github.com/kevin-wynn/playground',
                   'actions': [
                     {
                       'type': 'button',
                       'text': 'Playground Docs',
-                      'url': 'https://confluence.homeadvisor.com/display/~kwynn/Playground+Slack+Documentation'
+                      'url': 'https://github.com/kevin-wynn/playground'
                     }
                   ]
                 }
@@ -327,12 +327,12 @@ router.post('/', function(req, res, next) {
                 'color': '#F03434'
               },
               {
-                'fallback': 'Refer to the docs for more information at https://confluence.homeadvisor.com/display/~kwynn/Playground+Slack+Documentation',
+                'fallback': 'Refer to the docs for more information at https://github.com/kevin-wynn/playground',
                 'actions': [
                   {
                     'type': 'button',
                     'text': 'Playground Docs',
-                    'url': 'https://confluence.homeadvisor.com/display/~kwynn/Playground+Slack+Documentation'
+                    'url': 'https://github.com/kevin-wynn/playground'
                   }
                 ]
               }
@@ -442,7 +442,7 @@ var logError = (err) => {
   var errorPrefix = 'ERROR:';
   console.error(errorPrefix+err);
   closeMongoConnection('logError')
-  res.status(200).send({text:errorPrefix+err+' If this error continues to occur you can file a ticket here: https://git.homeadvisor.com/kevin.wynn/playground/issues'})
+  res.status(200).send({text:errorPrefix+err+' If this error continues to occur you can file a ticket here: https://github.com/kevin-wynn/playground'})
 }
 
 var closeMongoConnection = (ctx) => {
